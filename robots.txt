@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://knowledgehealth.github.io/knowledge-health-site/sitemap.xml
