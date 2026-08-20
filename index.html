@@ -3,48 +3,231 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Knowledge Health | Fiabilidad del conocimiento en Confluence</title>
-  <meta name="description" content="Knowledge Health detecta posibles contradicciones en Confluence, muestra la evidencia y deja la decisión final en manos de una persona.">
+  <title>Knowledge Health | Detecta contradicciones en Confluence</title>
+  <meta name="description" content="Knowledge Health detecta posibles contradicciones entre páginas de Confluence, muestra la evidencia y deja la decisión final en manos de una persona.">
+  <meta name="theme-color" content="#0b1f33">
+  <meta property="og:title" content="Knowledge Health | Detecta contradicciones en Confluence">
+  <meta property="og:description" content="Haz más fiable el conocimiento de tu organización antes de que una página obsoleta llegue a una persona o a una IA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://knowledgehealth.github.io/knowledge-health-site/">
+  <link rel="canonical" href="https://knowledgehealth.github.io/knowledge-health-site/">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#inicio"><img src="logo.svg" alt="" width="34" height="34"><span>Knowledge Health</span></a>
-      <nav aria-label="Navegación principal"><a href="#problema">Problema</a><a href="#funciona">Cómo funciona</a><a href="#piloto">Piloto</a></nav>
-      <a class="button outline small" href="mailto:hello.knowledgehealth@gmail.com?subject=Knowledge%20Health">Contactar</a>
+      <a class="brand" href="#inicio" aria-label="Knowledge Health, inicio">
+        <img src="logo.svg" alt="" width="34" height="34">
+        <span>Knowledge Health</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#problema">Problema</a>
+        <a href="#funciona">Cómo funciona</a>
+        <a href="#seguridad">Seguridad</a>
+        <a href="#piloto">Piloto</a>
+      </nav>
+      <a class="button outline small" href="mailto:hello.knowledgehealth@gmail.com?subject=Knowledge%20Health%20-%20Contacto">Contactar</a>
     </div>
   </header>
 
-  <main>
+  <main id="contenido">
     <section class="hero" id="inicio">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <div class="eyebrow">PARA ATLASSIAN CONFLUENCE</div>
-          <h1>Evita que tu equipo o tu IA trabajen con la <span>versión equivocada.</span></h1>
-          <p class="lead">Knowledge Health detecta posibles contradicciones entre páginas de Confluence, reúne la evidencia y permite que una persona confirme qué documento debe seguir siendo la referencia.</p>
-          <div class="actions"><a class="button primary" href="mailto:hello.knowledgehealth@gmail.com?subject=Solicitar%20piloto%20gratuito%20de%20Knowledge%20Health">Solicitar piloto gratuito</a><a class="button ghost" href="#funciona">Ver cómo funciona</a></div>
-          <div class="trust"><span>✓ Evidencia visible</span><span>✓ Decisión humana</span><span>✓ Integrado en Confluence</span></div>
+          <h1>Detecta contradicciones antes de que se conviertan en <span>decisiones equivocadas.</span></h1>
+          <p class="lead">Knowledge Health compara documentación relacionada en Confluence, muestra la evidencia y permite que una persona confirme qué versión debe seguir siendo la referencia.</p>
+          <div class="actions">
+            <a class="button primary" href="mailto:hello.knowledgehealth@gmail.com?subject=Solicitar%20piloto%20gratuito%20de%20Knowledge%20Health&body=Hola%2C%20utilizamos%20Confluence%20y%20nos%20gustar%C3%ADa%20valorar%20un%20piloto%20de%20Knowledge%20Health.%0A%0AEmpresa%3A%0A%C3%81rea%20o%20equipo%3A%0APersona%20de%20contacto%3A">Solicitar piloto gratuito</a>
+            <a class="button ghost" href="#funciona">Ver cómo funciona</a>
+          </div>
+          <div class="trust" aria-label="Características principales">
+            <span>✓ Evidencia visible</span>
+            <span>✓ Decisión humana</span>
+            <span>✓ Integrado en Confluence</span>
+          </div>
+          <p class="microcopy">Piloto privado · Sin compromiso · Coordinación por email</p>
         </div>
-        <div class="product-card">
-          <div class="product-head"><strong>Knowledge Health</strong><span>Análisis completado</span></div>
+
+        <div class="product-card" aria-label="Ejemplo ilustrativo del flujo de revisión de Knowledge Health">
+          <div class="product-head">
+            <strong>Knowledge Health</strong>
+            <span>Análisis completado</span>
+          </div>
           <p class="label">Flujo de revisión</p>
-          <div class="workflow"><div><small>1. Inventario</small><b>16 páginas</b></div><div><small>2. Análisis</small><b>Completado</b></div><div class="warn"><small>3. Decisiones</small><b>2 pendientes</b></div><div><small>4. Resultado</small><b>En progreso</b></div></div>
-          <div class="conflict"><div class="conflict-title"><div><small>POSIBLE CONTRADICCIÓN</small><h3>Dos versiones incompatibles</h3></div><span>Pendiente</span></div><div class="evidence"><article><strong>Política 2023</strong><p>“Las devoluciones se aceptan durante 30 días...”</p></article><article><strong>Política actual</strong><p>“Las devoluciones se aceptan durante 45 días...”</p></article></div><p class="note">Ejemplo ilustrativo del flujo de revisión.</p></div>
+          <div class="workflow">
+            <div><small>1. Inventario</small><b>16 páginas</b></div>
+            <div><small>2. Análisis</small><b>Completado</b></div>
+            <div class="warn"><small>3. Decisiones</small><b>2 pendientes</b></div>
+            <div><small>4. Resultado</small><b>En progreso</b></div>
+          </div>
+          <div class="conflict">
+            <div class="conflict-title">
+              <div><small>POSIBLE CONTRADICCIÓN</small><h3>Dos versiones incompatibles</h3></div>
+              <span>Pendiente</span>
+            </div>
+            <div class="evidence">
+              <article><strong>Política 2023</strong><p>“Las devoluciones se aceptan durante 30 días...”</p></article>
+              <article><strong>Política actual</strong><p>“Las devoluciones se aceptan durante 45 días...”</p></article>
+            </div>
+            <p class="note">Ejemplo ilustrativo del flujo de revisión.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="problema"><div class="container"><div class="heading"><span>EL PROBLEMA</span><h2>Confluence crece. Las contradicciones también.</h2><p>Políticas antiguas, procedimientos duplicados y páginas incompatibles pueden parecer igualmente válidos. El error aparece cuando alguien —o una herramienta de IA— utiliza la fuente incorrecta.</p></div><div class="cards"><article><b>01</b><h3>Información duplicada</h3><p>Dos páginas describen el mismo proceso, pero han evolucionado de forma diferente.</p></article><article><b>02</b><h3>Políticas incompatibles</h3><p>Distintas áreas mantienen instrucciones que no pueden ser correctas al mismo tiempo.</p></article><article><b>03</b><h3>Fuentes poco fiables para IA</h3><p>Un asistente puede recuperar una página obsoleta si nadie ha dejado claro qué versión es la válida.</p></article></div></div></section>
+    <section class="proof-strip" aria-label="Resumen del producto">
+      <div class="container proof-grid">
+        <div><strong>Detecta</strong><span>posibles contradicciones y contenido que merece revisión</span></div>
+        <div><strong>Explica</strong><span>muestra fragmentos concretos como evidencia</span></div>
+        <div><strong>Registra</strong><span>conserva qué versión ha validado una persona</span></div>
+      </div>
+    </section>
 
-    <section class="section alt" id="funciona"><div class="container"><div class="heading"><span>CÓMO FUNCIONA</span><h2>De una posible contradicción a una fuente validada.</h2><p>Knowledge Health automatiza la detección, pero no sustituye el criterio de la organización.</p></div><div class="steps"><article><em>1</em><div><h3>Analiza</h3><p>Revisa las páginas accesibles de Confluence y localiza contenido relacionado que merece comparación.</p></div></article><article><em>2</em><div><h3>Muestra la evidencia</h3><p>Presenta las versiones incompatibles con fragmentos concretos para que el conflicto sea revisable.</p></div></article><article><em>3</em><div><h3>Decide una persona</h3><p>La aplicación no decide por la empresa. Una persona confirma qué versión debe mantenerse como referencia.</p></div></article><article><em>4</em><div><h3>Conserva la decisión</h3><p>La fuente elegida queda validada y la versión descartada queda identificada para evitar usos posteriores.</p></div></article></div></div></section>
+    <section class="section" id="problema">
+      <div class="container">
+        <div class="heading">
+          <span>EL PROBLEMA</span>
+          <h2>Confluence crece. Las contradicciones también.</h2>
+          <p>Políticas antiguas, procedimientos duplicados y páginas incompatibles pueden parecer igualmente válidos. El riesgo aparece cuando una persona, un equipo de soporte o una herramienta de IA utiliza la fuente incorrecta.</p>
+        </div>
+        <div class="cards">
+          <article>
+            <b>01</b>
+            <h3>Versiones incompatibles</h3>
+            <p>Dos páginas hablan del mismo proceso, pero ofrecen instrucciones que no pueden ser correctas al mismo tiempo.</p>
+          </article>
+          <article>
+            <b>02</b>
+            <h3>Documentación que envejece</h3>
+            <p>Una política sustituida puede seguir apareciendo en búsquedas y parecer válida si nadie la ha identificado como obsoleta.</p>
+          </article>
+          <article>
+            <b>03</b>
+            <h3>IA apoyada en fuentes erróneas</h3>
+            <p>Un asistente puede recuperar una página antigua si la organización no ha dejado claro qué versión debe servir de referencia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <section class="section dark"><div class="container split"><div><span class="kicker-light">PRIVACIDAD Y SEGURIDAD</span><h2>Diseñado para trabajar dentro del ecosistema Atlassian.</h2><p>Knowledge Health está desarrollado sobre Atlassian Forge y se instala en Confluence mediante el flujo oficial de Atlassian. La empresa conserva la decisión final sobre qué fuente es válida.</p><a class="light-link" href="https://github.com/Ricardo-Personal/knowledge-health-legal/blob/main/README.md" target="_blank" rel="noopener">Consultar política de privacidad →</a></div><div class="dark-cards"><article><strong>Atlassian Forge</strong><p>Integración directa con Confluence.</p></article><article><strong>Control humano</strong><p>Las contradicciones no se resuelven automáticamente.</p></article><article><strong>Permisos visibles</strong><p>El administrador revisa los permisos antes de instalar.</p></article></div></div></section>
+    <section class="section alt" id="funciona">
+      <div class="container">
+        <div class="heading">
+          <span>CÓMO FUNCIONA</span>
+          <h2>De una posible contradicción a una fuente validada.</h2>
+          <p>Knowledge Health automatiza la detección y organiza la evidencia. La decisión final sigue siendo humana.</p>
+        </div>
+        <div class="steps">
+          <article><em>1</em><div><h3>Analiza el contenido accesible</h3><p>Revisa las páginas de Confluence a las que el usuario autorizado ya tiene acceso y localiza documentación relacionada.</p></div></article>
+          <article><em>2</em><div><h3>Muestra la evidencia</h3><p>Presenta las versiones potencialmente incompatibles con fragmentos concretos para que la revisión sea rápida y verificable.</p></div></article>
+          <article><em>3</em><div><h3>Una persona decide</h3><p>Knowledge Health no impone una respuesta. La organización confirma qué documento debe quedar como referencia.</p></div></article>
+          <article><em>4</em><div><h3>Conserva la decisión</h3><p>La versión elegida queda validada y la descartada queda identificada para reducir futuros usos incorrectos.</p></div></article>
+        </div>
+      </div>
+    </section>
 
-    <section class="section" id="piloto"><div class="container pilot"><div><span>PILOTO PRIVADO</span><h2>Pruébalo con documentación real, sin coste.</h2><p>Estamos seleccionando empresas que utilicen Confluence para validar Knowledge Health en entornos reales y mejorar el producto a partir de resultados y comentarios concretos.</p></div><div class="pilot-box"><h3>¿Utilizáis Confluence?</h3><p>Cuéntanos brevemente vuestro caso. Si encaja, te enviaremos por correo la propuesta y el enlace privado de instalación de Atlassian.</p><a class="button primary full" href="mailto:hello.knowledgehealth@gmail.com?subject=Solicitar%20piloto%20gratuito%20de%20Knowledge%20Health">Solicitar piloto gratuito</a><a class="mail" href="mailto:hello.knowledgehealth@gmail.com">hello.knowledgehealth@gmail.com</a></div></div></section>
+    <section class="section use-cases">
+      <div class="container">
+        <div class="heading compact">
+          <span>DÓNDE ENCAJA</span>
+          <h2>Especialmente útil cuando muchas personas dependen de la misma documentación.</h2>
+        </div>
+        <div class="use-grid">
+          <article><h3>Operaciones</h3><p>Procedimientos, instrucciones internas y procesos que cambian con frecuencia.</p></article>
+          <article><h3>Soporte</h3><p>Respuestas, políticas y guías que deben ser coherentes para todos los agentes.</p></article>
+          <article><h3>Personas y RR. HH.</h3><p>Políticas internas donde una versión antigua puede generar errores evitables.</p></article>
+          <article><h3>Knowledge Management e IT</h3><p>Equipos responsables de mantener Confluence utilizable, actualizado y fiable.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="seguridad">
+      <div class="container split">
+        <div>
+          <span class="kicker-light">PRIVACIDAD Y SEGURIDAD</span>
+          <h2>Diseñado para trabajar dentro del ecosistema Atlassian.</h2>
+          <p>Knowledge Health funciona sobre Atlassian Forge. El procesamiento y almacenamiento utilizan servicios de Atlassian y la aplicación no envía intencionadamente el contenido del cliente a servidores operados por el desarrollador.</p>
+          <a class="light-link" href="privacidad.html">Consultar política de privacidad →</a>
+        </div>
+        <div class="dark-cards">
+          <article><strong>Atlassian Forge</strong><p>La lógica de la aplicación se integra con Confluence mediante la plataforma Forge.</p></article>
+          <article><strong>Control humano</strong><p>Las contradicciones detectadas no se resuelven automáticamente.</p></article>
+          <article><strong>Permisos visibles</strong><p>El administrador revisa los permisos solicitados antes de instalar la aplicación.</p></article>
+          <article><strong>Sin publicidad ni venta de datos</strong><p>Knowledge Health no utiliza servicios de publicidad externos ni vende datos del cliente.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pilot-section" id="piloto">
+      <div class="container pilot">
+        <div class="pilot-copy">
+          <span>PILOTO PRIVADO</span>
+          <h2>Pruébalo con documentación real, sin coste.</h2>
+          <p>Estamos seleccionando empresas que utilicen Confluence para validar Knowledge Health en entornos reales. El objetivo es medir utilidad, detectar limitaciones y mejorar el producto con casos reales.</p>
+          <div class="pilot-points">
+            <div><strong>0 €</strong><span>piloto gratuito</span></div>
+            <div><strong>Email</strong><span>coordinación sin reunión obligatoria</span></div>
+            <div><strong>Sin compromiso</strong><span>de compra posterior</span></div>
+          </div>
+        </div>
+        <div class="pilot-box">
+          <span class="pilot-label">PRIMER PASO</span>
+          <h3>¿Utilizáis Confluence?</h3>
+          <p>Cuéntanos brevemente vuestro caso. Si encaja, os enviaremos la propuesta y el enlace privado de instalación generado por Atlassian.</p>
+          <a class="button primary full" href="mailto:hello.knowledgehealth@gmail.com?subject=Solicitar%20piloto%20gratuito%20de%20Knowledge%20Health&body=Hola%2C%20utilizamos%20Confluence%20y%20nos%20gustar%C3%ADa%20valorar%20un%20piloto%20de%20Knowledge%20Health.%0A%0AEmpresa%3A%0A%C3%81rea%20o%20equipo%3A%0APersona%20de%20contacto%3A%0AComentarios%3A">Solicitar piloto gratuito</a>
+          <a class="mail" href="mailto:hello.knowledgehealth@gmail.com">hello.knowledgehealth@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container">
+        <div class="heading compact">
+          <span>PREGUNTAS FRECUENTES</span>
+          <h2>Lo esencial antes de probarlo.</h2>
+        </div>
+        <div class="faq-grid">
+          <details>
+            <summary>¿Knowledge Health decide qué documento es correcto?</summary>
+            <p>No. Detecta el posible conflicto, muestra la evidencia y deja la decisión final en manos de una persona de la organización.</p>
+          </details>
+          <details>
+            <summary>¿Hace falta una reunión para probarlo?</summary>
+            <p>No. El piloto puede coordinarse íntegramente por correo electrónico. Una demostración solo es necesaria si la empresa la considera útil.</p>
+          </details>
+          <details>
+            <summary>¿Cómo se instala?</summary>
+            <p>Mediante un enlace privado de instalación generado por Atlassian. Un administrador de Confluence revisa los permisos antes de autorizar la aplicación.</p>
+          </details>
+          <details>
+            <summary>¿Qué ocurre después del piloto?</summary>
+            <p>No existe compromiso de compra. El objetivo inicial es validar el producto con documentación real y recoger comentarios concretos.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <div><span>KNOWLEDGE HEALTH</span><h2>Haz más fiable el conocimiento que ya tienes.</h2></div>
+        <a class="button primary" href="mailto:hello.knowledgehealth@gmail.com?subject=Solicitar%20piloto%20gratuito%20de%20Knowledge%20Health">Solicitar piloto gratuito</a>
+      </div>
+    </section>
   </main>
 
-  <footer><div class="container footer"><div class="brand"><img src="logo.svg" alt="" width="28" height="28"><span>Knowledge Health</span></div><div><a href="mailto:hello.knowledgehealth@gmail.com">Contacto</a> · <a href="https://github.com/Ricardo-Personal/knowledge-health-legal/blob/main/README.md" target="_blank" rel="noopener">Privacidad</a></div><p>Producto independiente para Atlassian Confluence.</p></div></footer>
+  <footer>
+    <div class="container footer">
+      <div class="brand"><img src="logo.svg" alt="" width="28" height="28"><span>Knowledge Health</span></div>
+      <div class="footer-links">
+        <a href="mailto:hello.knowledgehealth@gmail.com">Contacto</a>
+        <a href="privacidad.html">Privacidad</a>
+      </div>
+      <p>Producto independiente para Atlassian Confluence. Atlassian y Confluence son marcas de sus respectivos propietarios.</p>
+    </div>
+  </footer>
 </body>
 </html>
