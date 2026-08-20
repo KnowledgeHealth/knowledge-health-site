@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Knowledge Health</title>
+  <meta name="description" content="Contacta con Knowledge Health para solicitar un piloto gratuito en Confluence.">
+  <meta name="theme-color" content="#0b1f33">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-intro{max-width:680px}.contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0 22px}.contact-actions .button{width:100%}.contact-secondary{display:grid;gap:12px;margin-top:18px}.contact-box{border:1px solid var(--line);border-radius:14px;padding:18px;background:#f7faff}.contact-box strong{display:block;color:var(--navy);margin-bottom:4px}.contact-box p{margin:0;color:var(--muted)}.copy-row{display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap}.copy-row code{background:#fff;border:1px solid var(--line);border-radius:8px;padding:9px 11px;color:var(--navy);font-family:inherit}.copy-button{border:1px solid #b8c3cf;border-radius:8px;padding:9px 12px;background:#fff;color:var(--navy);font:inherit;font-weight:700;cursor:pointer}.copy-status{font-size:13px;color:var(--green);min-height:20px}.back-link{display:inline-block;margin-bottom:22px;color:var(--blue);font-weight:700;text-decoration:none}@media(max-width:640px){.contact-actions{grid-template-columns:1fr}}
+  </style>
+</head>
+<body class="privacy-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Knowledge Health, inicio"><img src="logo.svg" alt="" width="34" height="34"><span>Knowledge Health</span></a>
+      <a class="button outline small" href="index.html">Volver a la web</a>
+    </div>
+  </header>
+
+  <main class="privacy-shell">
+    <div class="container">
+      <section class="privacy-card">
+        <a class="back-link" href="index.html">← Volver</a>
+        <div class="contact-intro">
+          <span class="eyebrow">PILOTO PRIVADO</span>
+          <h1>Hablemos de vuestro Confluence.</h1>
+          <p>Elige la opción que utilices para escribirnos. El correo se abre con el destinatario, asunto y una plantilla básica ya preparados.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button primary" target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hello.knowledgehealth@gmail.com&amp;su=Solicitar%20piloto%20gratuito%20de%20Knowledge%20Health&amp;body=Hola%2C%20utilizamos%20Confluence%20y%20nos%20gustar%C3%ADa%20valorar%20un%20piloto%20de%20Knowledge%20Health.%0A%0AEmpresa%3A%0A%C3%81rea%20o%20equipo%3A%0APersona%20de%20contacto%3A%0AComentarios%3A">Abrir Gmail</a>
+          <a class="button ghost" target="_blank" rel="noopener noreferrer" href="https://outlook.live.com/mail/0/deeplink/compose?to=hello.knowledgehealth@gmail.com&amp;subject=Solicitar%20piloto%20gratuito%20de%20Knowledge%20Health&amp;body=Hola%2C%20utilizamos%20Confluence%20y%20nos%20gustar%C3%ADa%20valorar%20un%20piloto%20de%20Knowledge%20Health.%0A%0AEmpresa%3A%0A%C3%81rea%20o%20equipo%3A%0APersona%20de%20contacto%3A%0AComentarios%3A">Abrir Outlook</a>
+        </div>
+
+        <div class="contact-secondary">
+          <div class="contact-box">
+            <strong>¿Usáis otro correo?</strong>
+            <p>Copia nuestra dirección y escribe desde vuestro cliente habitual.</p>
+            <div class="copy-row">
+              <code id="email">hello.knowledgehealth@gmail.com</code>
+              <button class="copy-button" id="copyEmail" type="button">Copiar correo</button>
+            </div>
+            <div class="copy-status" id="copyStatus" aria-live="polite"></div>
+          </div>
+          <div class="contact-box">
+            <strong>Qué necesitamos saber</strong>
+            <p>Empresa, área o equipo y una frase sobre cómo utilizáis Confluence. No hace falta preparar nada más para el primer contacto.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const button = document.getElementById('copyEmail');
+    const status = document.getElementById('copyStatus');
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('hello.knowledgehealth@gmail.com');
+        status.textContent = 'Correo copiado.';
+      } catch (e) {
+        status.textContent = 'Selecciona la dirección de correo y cópiala manualmente.';
+      }
+    });
+  </script>
+</body>
+</html>
